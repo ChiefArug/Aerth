@@ -1,0 +1,28 @@
+#|================================|
+#|              git               |
+#|================================|
+/*
+!.gitignore
+!LICENSE
+!README.md
+
+#|================================|
+#|            config              |
+#|================================|
+!/config/
+/config/*client.toml
+/config/*.bak
+/config/xaero*
+/config/pneumaticcraft/
+/config/jei/bookmarks.ini
+
+#|================================|
+#|         serverconfig           |
+#|================================|
+!/defaultconfigs/
+
+#|================================|
+#|             kubejs             |
+#|================================|
+!/kubejs/
+/kubejs/exported/

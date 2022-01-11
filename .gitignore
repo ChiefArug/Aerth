@@ -15,6 +15,7 @@
 /config/xaero*
 /config/pneumaticcraft/
 /config/jei/bookmarks.ini
+/config/blame-forge.properties
 
 #|================================|
 #|         serverconfig           |

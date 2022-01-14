@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:default",
+	"config": {
+		"top_material": {
+			"Name": "tconstruct:blood_ichor_slime_grass",
+			"Properties": {
+				"snowy": "false"
+			}
+		},
+		"under_material": {
+			"Name": "tconstruct:ichor_slime_dirt"
+		},
+		"underwater_material": {
+			"Name": "tconstruct:grout"
+		}
+	}
+}

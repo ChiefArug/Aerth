@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:huge_fungus",
+	"config": {
+		"hat_state": {
+			"Name": "tconstruct:blood_slime_leaves"
+		},
+		"decor_state": {
+			"Name": "tconstruct:ichor_congealed_slime"
+		},
+		"stem_state": {
+			"Name": "tconstruct:bloodshroom_log",
+			"Properties": {
+				"axis": "y"
+			}
+		},
+		"valid_base_block": {
+			"Name": "tconstruct:blood_ichor_slime_grass"
+		}
+	}
+}

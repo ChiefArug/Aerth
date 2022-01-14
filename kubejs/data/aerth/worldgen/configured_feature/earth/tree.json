@@ -1,0 +1,59 @@
+{
+	"type": "minecraft:tree",
+	"config": {
+		"max_water_depth": 0,
+		"ignore_vines": true,
+		"heightmap": "OCEAN_FLOOR",
+		"minimum_size": {
+			"type": "minecraft:two_layers_feature_size",
+			"limit": 1,
+			"lower_size": 0,
+			"upper_size": 1
+		},
+		"trunk_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tconstruct:greenheart_log",
+				"Properties": {
+					"axis": "y"
+				}
+			}
+		},
+		"leaves_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tconstruct:earth_slime_leaves",
+				"Properties": {
+					"persistent": "false",
+					"distance": "7"
+				}
+			}
+		},
+		"trunk_placer": {
+			"type": "minecraft:straight_trunk_placer",
+			"base_height": 4,
+			"height_rand_a": 2,
+			"height_rand_b": 0
+		},
+		"foliage_placer": {
+			"type": "minecraft:blob_foliage_placer",
+			"radius": 2,
+			"offset": 0,
+			"height": 3
+		},
+		"decorators": [
+			{
+				"type": "minecraft:alter_ground",
+				"provider": {
+					"type": "minecraft:simple_state_provider",
+					"state": {
+						"Name": "tconstruct:earth_earth_slime_grass",
+						"Properties": {
+							"snowy": "false"
+						}
+					}
+				}
+			}
+		]
+	}
+}

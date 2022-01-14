@@ -1,0 +1,32 @@
+{
+	"type": "minecraft:decorated",
+	"config": {
+		"decorator": {
+			"type": "minecraft:count_extra",
+			"config": {
+				"count": 2,
+				"extra_count": 12,
+				"extra_chance": 0.9
+			}
+		},
+		"feature": {
+			"type": "minecraft:decorated",
+			"config": {
+				"decorator": {
+					"type": "minecraft:decorated",
+					"config": {
+						"outer": {
+							"type": "minecraft:square",
+							"config": {}
+						},
+						"inner": {
+							"type": "minecraft:heightmap",
+							"config": {}
+						}
+					}
+				},
+				"feature": "aerth:sky/tree"
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:ore",
+	"config": {
+		"state": {
+			"Name": "thermal:ruby_ore"
+		},
+		"size": 10,
+		"target": {
+			"predicate_type": "minecraft:tag_match",
+			"tag": "forge:stone"
+		}
+	}
+}

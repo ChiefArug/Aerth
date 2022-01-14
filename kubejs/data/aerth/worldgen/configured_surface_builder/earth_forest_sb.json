@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:default",
+	"config": {
+		"top_material": {
+			"Name": "minecraft:grass_block",
+			"Properties": {
+				"snowy": "false"
+			}
+		},
+		"under_material": {
+			"Name": "tconstruct:earth_slime_dirt"
+		},
+		"underwater_material": {
+			"Name": "tconstruct:grout"
+		}
+	}
+}

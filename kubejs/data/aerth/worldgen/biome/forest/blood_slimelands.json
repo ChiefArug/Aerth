@@ -14,7 +14,16 @@
 		"grass_color": 13183563
 	},
 	"starts": [],
-	"spawners": {},
+	"spawners": {
+		"monster": [
+			{
+				"type": "minecraft:magma_cube",
+				"weight": 1,
+				"minCount": 1,
+				"maxCount": 3
+			}
+		]
+	},
 	"spawn_costs": {},
 	"carvers": {},
 	"features": [
@@ -27,7 +36,7 @@
 		[],
 		[],
 		[
-            "aerth:blood/forest_tree_placed"
+			"aerth:blood/forest_tree_placed"
 		]
 	]
 }

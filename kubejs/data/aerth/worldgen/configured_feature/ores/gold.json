@@ -2,7 +2,7 @@
 	"type": "minecraft:ore",
 	"config": {
 		"state": {
-			"Name": "thermal:ruby_ore"
+			"Name": "minecraft:gold_ore"
 		},
 		"target": {
 			"predicate_type": "minecraft:tag_match",

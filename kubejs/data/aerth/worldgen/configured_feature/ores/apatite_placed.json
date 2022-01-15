@@ -1,0 +1,34 @@
+{
+	"type": "minecraft:decorated",
+	"config": {
+		"decorator": {
+			"type": "minecraft:count",
+			"config": {
+				"count": 10
+			}
+		},
+		"feature": {
+			"type": "minecraft:decorated",
+			"config": {
+				"decorator": {
+					"type": "minecraft:square",
+					"config": {}
+				},
+				"feature": {
+					"type": "minecraft:decorated",
+					"config": {
+						"decorator": {
+							"type": "minecraft:range",
+							"config": {
+								"maximum": 15,
+								"bottom_offset": 0,
+								"top_offset": 0
+							}
+						},
+						"feature": "aerth:ores/apatite"
+					}
+				}
+			}
+		}
+	}
+}

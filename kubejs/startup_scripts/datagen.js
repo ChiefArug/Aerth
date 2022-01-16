@@ -111,15 +111,15 @@ const datagen = {
 		metal: {
 			1: {
 				range_max: 128,
-				range_min: 50,
+				range_min: 30,
 				cluster_size: 10,
-				per_chunk: 20
+				per_chunk: 40 	
 			},
 			2: {
-				range_max: 50,
-				range_min: 20,
+				range_max: 45,
+				range_min: 15,
 				cluster_size: 8,
-				per_chunk: 20
+				per_chunk: 15
 			},
 			3: {
 				range_max: 30,
@@ -131,26 +131,33 @@ const datagen = {
 		gem: {
 			1: {
 				range_max: 25,
-				range_min: 10,
-				cluster_size: 6,
-				per_chunk: 10
+				range_min: 5,
+				cluster_size: 2,
+				per_chunk: 20
 			},
 			2: {
-				range_max: 15,
-				range_min: 5,
+				range_max: 20,
+				range_min: 0,
 				cluster_size: 8,
 				per_chunk: 10
 			}
 		}
 	}
 }
-
+const biomes = {
+	'forest/blood_slimelands': 'blood',
+	'forest/earth_slimelands': 'earth',
+	'forest/ender_slimelands': 'ender',
+	'forest/sky_slimelands': 'sky'
+}
+const currentVersion = 12
 onEvent('loaded', event => {
-	console.log('Datagen is go!')
 	let loadedBefore = JsonIO.read('kubejs/datagen_state.json')
-	if (loadedBefore) return
+	console.log('Datagen version: ' + loadedBefore.version)
+	if (loadedBefore && !(loadedBefore.version < currentVersion)) return
+	console.log('Datagen is go!')
 	for (o of datagen.ores) {
-		const tier = datagen.tiers[o.type][o.tier]
+		let tier = datagen.tiers[o.type][o.tier]
 		let oreData = {
 			type: 'minecraft:ore',
 			config: {
@@ -176,11 +183,10 @@ onEvent('loaded', event => {
 						feature: {type: 'minecraft:decorated',
 							config: {
 								decorator: {
-									type: 'minecraft:range',
+									type: 'minecraft:depth_average',
 									config: {
-										maximum: tier.range_max,
-										bottom_offset: 0,
-										top_offset: 0
+										baseline: ((tier.range_max - tier.range_min) / 2) + tier.range_min,
+										spread: (tier.range_max - tier.range_min) / 2
 									}
 								},
 								feature: `aerth:ores/${o.name}`
@@ -191,6 +197,13 @@ onEvent('loaded', event => {
 			}
 		}
 		JsonIO.write(`kubejs/data/aerth/worldgen/configured_feature/ores/${o.name}_placed.json`, placementData)
+		/*for (b in biomes) {
+			if (o.slime_affinity === biomes[b] || o.type === 'metal'){
+				let biome = JsonIO.read(`kubejs/data/aerth/worldgen/biome/${b}.json`)
+				biome.features[6].push(`aerth:ores/${o.name}_placed`)
+				JsonIO.write(`kubejs/data/aerth/worldgen/biome/${b}.json`, biome)
+			}
+		}*/
 	}
-	JsonIO.write('kubejs/datagen_state.json', {version: 1})
+	JsonIO.write('kubejs/datagen_state.json', {version: currentVersion})
 })

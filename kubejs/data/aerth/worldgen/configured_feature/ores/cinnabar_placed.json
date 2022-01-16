@@ -4,7 +4,7 @@
 		"decorator": {
 			"type": "minecraft:count",
 			"config": {
-				"count": 10
+				"count": 20
 			}
 		},
 		"feature": {
@@ -18,11 +18,10 @@
 					"type": "minecraft:decorated",
 					"config": {
 						"decorator": {
-							"type": "minecraft:range",
+							"type": "minecraft:depth_average",
 							"config": {
-								"maximum": 15,
-								"bottom_offset": 0,
-								"top_offset": 0
+								"baseline": 15,
+								"spread": 10
 							}
 						},
 						"feature": "aerth:ores/cinnabar"

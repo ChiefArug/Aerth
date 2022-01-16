@@ -8,6 +8,6 @@
 			"predicate_type": "minecraft:tag_match",
 			"tag": "aerth:ore_replaceable"
 		},
-		"size": 8
+		"size": 2
 	}
 }

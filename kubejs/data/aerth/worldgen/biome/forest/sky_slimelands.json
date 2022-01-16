@@ -1,7 +1,7 @@
 {
 	"surface_builder": "aerth:sky_forest_sb",
-	"depth": 0.125,
-	"scale": 0.05,
+	"depth": 1,
+	"scale": 10,
 	"temperature": 0.8,
 	"downfall": 0.4,
 	"precipitation": "rain",
@@ -24,10 +24,19 @@
 		[],
 		[],
 		[],
-		[],
+		[
+			"aerth:ores/diamond_placed",
+			"aerth:ores/lapis_placed",
+			"aerth:ores/gold_placed",
+			"aerth:ores/copper_placed",
+			"aerth:ores/lead_placed",
+			"aerth:ores/nickel_placed",
+			"aerth:ores/tin_placed",
+			"aerth:ores/silver_placed"
+		],
 		[],
 		[
-            "aerth:sky/forest_tree_placed"
+			"aerth:sky/forest_tree_placed"
 		]
 	]
 }

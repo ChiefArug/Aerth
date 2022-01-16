@@ -18,11 +18,10 @@
 					"type": "minecraft:decorated",
 					"config": {
 						"decorator": {
-							"type": "minecraft:range",
+							"type": "minecraft:depth_average",
 							"config": {
-								"maximum": 15,
-								"bottom_offset": 0,
-								"top_offset": 0
+								"baseline": 10,
+								"spread": 10
 							}
 						},
 						"feature": "aerth:ores/diamond"

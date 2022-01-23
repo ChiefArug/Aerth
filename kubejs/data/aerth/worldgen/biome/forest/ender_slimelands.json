@@ -14,7 +14,16 @@
 		"grass_color": 12739327
 	},
 	"starts": [],
-	"spawners": {},
+	"spawners": {
+		"monster": [
+			{
+				"type": "tconstruct:ender_slime",
+				"weight": 50,
+				"minCount": 3,
+				"maxCount": 6
+			}
+		]
+	},
 	"spawn_costs": {},
 	"carvers": {},
 	"features": [

@@ -1,7 +1,7 @@
 {
 	"surface_builder": "aerth:sky_forest_sb",
 	"depth": 1,
-	"scale": 10,
+	"scale": 5,
 	"temperature": 0.8,
 	"downfall": 0.4,
 	"precipitation": "rain",

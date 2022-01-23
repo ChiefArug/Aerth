@@ -1,7 +1,7 @@
 {
-	"surface_builder": "aerth:blood_sb",
-	"depth": 0.5,
-	"scale": 0.4,
+	"surface_builder": "aerth:clay_plains_sb",
+	"depth": 0.2,
+	"scale": 1,
 	"temperature": 0.8,
 	"downfall": 0.4,
 	"precipitation": "rain",
@@ -11,13 +11,13 @@
 		"fog_color": 12638463,
 		"water_color": 4159204,
 		"water_fog_color": 329011,
-		"grass_color": 13183563
+		"grass_color": 56301
 	},
 	"starts": [],
 	"spawners": {
-		"misc": [
+		"monster": [
 			{
-				"type": "minecraft:magma_cube",
+				"type": "tconstruct:terracube",
 				"weight": 50,
 				"minCount": 3,
 				"maxCount": 6
@@ -34,8 +34,8 @@
 		[],
 		[],
 		[
-			"aerth:ores/ruby_placed",
-			"aerth:ores/cinnabar_placed",
+			"aerth:ores/diamond_placed",
+			"aerth:ores/lapis_placed",
 			"aerth:ores/gold_placed",
 			"aerth:ores/copper_placed",
 			"aerth:ores/lead_placed",
@@ -45,7 +45,7 @@
 		],
 		[],
 		[
-			"aerth:blood/forest_tree_placed"
+			"aerth:sky/forest_tree_placed"
 		]
 	]
 }

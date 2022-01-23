@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:default",
+	"config": {
+		"top_material": {
+			"Name": "minecraft:gravel",
+			"Properties": {
+				"snowy": "false"
+			}
+		},
+		"under_material": {
+			"Name": "tconstruct:grout"
+		},
+		"underwater_material": {
+			"Name": "minecraft:clay"
+		}
+	}
+}

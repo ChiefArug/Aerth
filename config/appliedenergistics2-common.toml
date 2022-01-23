@@ -1,12 +1,4 @@
 
-[battery]
-	entropyManipulator = 200000
-	chargedStaff = 8000
-	wirelessTerminal = 1600000
-	portableCell = 20000
-	colorApplicator = 20000
-	matterCannon = 200000
-
 #Warning: Disabling a feature may disable other features depending on it.
 [features]
 
@@ -83,6 +75,14 @@
 	#Chance to actually get an output with stacksize > 1.
 	#Range: 0.0 ~ 100.0
 	oreDoublePercentage = 90.0
+
+[battery]
+	entropyManipulator = 200000
+	chargedStaff = 8000
+	wirelessTerminal = 1600000
+	portableCell = 20000
+	colorApplicator = 20000
+	matterCannon = 200000
 
 [worldGen]
 	quartzOresClusterAmount = 20

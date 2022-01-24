@@ -15,16 +15,21 @@
 	},
 	"starts": [],
 	"spawners": {
-		"monster": [
+		"ambient": [
 			{
 				"type": "tconstruct:ender_slime",
-				"weight": 50,
+				"weight": 1,
 				"minCount": 3,
 				"maxCount": 6
 			}
 		]
 	},
-	"spawn_costs": {},
+	"spawn_costs": {
+		"tconstruct:ender_slime": {
+			"energy_budget": 4,
+			"charge": 2
+		}
+	},
 	"carvers": {},
 	"features": [
 		[],

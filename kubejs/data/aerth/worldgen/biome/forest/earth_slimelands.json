@@ -14,8 +14,22 @@
 		"grass_color": 8902504
 	},
 	"starts": [],
-	"spawners": {},
-	"spawn_costs": {},
+	"spawners": {
+		"ambient": [
+			{
+				"type": "minecraft:slime",
+				"weight": 1,
+				"minCount": 3,
+				"maxCount": 6
+			}
+		]
+	},
+	"spawn_costs": {
+		"minecraft:slime": {
+			"energy_budget": 4,
+			"charge": 2
+		}
+	},
 	"carvers": {},
 	"features": [
 		[],

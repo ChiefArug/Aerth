@@ -15,16 +15,31 @@
 	},
 	"starts": [],
 	"spawners": {
-		"monster": [
+		"ambient": [
 			{
 				"type": "tconstruct:terracube",
-				"weight": 50,
+				"weight": 7,
 				"minCount": 3,
 				"maxCount": 6
+			},
+			{
+				"type": "thermal:basalz",
+				"weight": 3,
+				"minCount": 2,
+				"maxCount": 4
 			}
 		]
 	},
-	"spawn_costs": {},
+	"spawn_costs": {
+		"tconstruct:terracube": {
+			"energy_budget": 4,
+			"charge": 2
+		},
+		"thermal:basalz": {
+			"energy_budget":1,
+			"charge": 2
+		}
+	},
 	"carvers": {},
 	"features": [
 		[],

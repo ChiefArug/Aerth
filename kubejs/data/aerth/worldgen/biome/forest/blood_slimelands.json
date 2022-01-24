@@ -15,16 +15,21 @@
 	},
 	"starts": [],
 	"spawners": {
-		"misc": [
+		"ambient": [
 			{
 				"type": "minecraft:magma_cube",
-				"weight": 50,
+				"weight": 1,
 				"minCount": 3,
 				"maxCount": 6
 			}
 		]
 	},
-	"spawn_costs": {},
+	"spawn_costs": {
+		"minecraft:magma_cube": {
+			"energy_budget": 4,
+			"charge": 2
+		}
+	},
 	"carvers": {},
 	"features": [
 		[],
